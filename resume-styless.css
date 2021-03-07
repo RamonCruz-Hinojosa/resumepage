@@ -97,7 +97,7 @@ p {
 
   .big-grid {
     width: 100%;
-    height: 850px;
+    height: 100%;
     display: grid;
     grid-template: auto 1fr / 1fr 800px 1fr;
     grid-template-areas: ". header ." ". main .";
@@ -142,5 +142,9 @@ p {
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-evenly;
+  }
+
+  #edu {
+    border-top: 5px solid rebeccapurple;
   }
 }
