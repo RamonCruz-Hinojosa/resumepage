@@ -5,7 +5,7 @@ body {
 
 .big-grid {
   width: 100%;
-  height: 100%;
+  height: auto;
   display: grid;
   grid-template-columns: 1fr 1000px 1fr;
   grid-template-rows: 30% 70%;
@@ -16,23 +16,26 @@ header {
   grid-area: header;
   background-color: white;
   display: grid;
+  min-height: auto;
+  width: 100%;
   grid-template-columns: 40% 60%;
   grid-template-rows: 1fr 1fr;
   grid-template-areas: "catimage headercont" "headerjob headerul";
   border-bottom: 3px solid aqua;
 }
-header::before {
+/* header::before {
   content: "";
   background-color: tomato;
   background-image: linear-gradient(to bottom right, tomato, yellow);
   grid-column: 2 / 3;
   grid-row: 1 / 3;
-}
+} */
 
 .catimage {
   background-image: url(https://i.ytimg.com/vi/HeFSK-kye-E/hqdefault.jpg);
   /* background-image: url(https://media.giphy.com/media/jpbnoe3UIa8TU8LM13/giphy.gif); */
   grid-area: catimage;
+  min-height: 150px;  
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -58,7 +61,7 @@ header::before {
   justify-self: center;
   align-self: center;
   background-size: cover;
-  color: white;
+  color: blueviolet;
 }
 
 #headerul {
@@ -68,12 +71,14 @@ header::before {
   margin: 0px;
   padding: 0px;
   justify-self: center;
-  color: white;
+  color: blueviolet;
 }
 
 main {
   grid-area: main;
   background-color: white;
+  width: 100%;
+  min-height: auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 100%;
@@ -97,6 +102,11 @@ main {
   margin: 0px;
   padding: 10px;
   list-style-type: none;
+  text-align: center;
+}
+
+#work>li {
+      border-bottom: 3px solid blueviolet;
 }
 
 #exp {
