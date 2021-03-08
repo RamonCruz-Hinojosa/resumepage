@@ -17,38 +17,125 @@ body {
 header {
   grid-area: header;
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: column wrap;
+  justify-content: space-evenly;
   background-color: white;
 }
 
 aside {
   grid-area: aside;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: space-evenly;
   background-image: linear-gradient(to bottom left, #634ae2, #4791d6);
 }
+aside > h3 {
+  color: white;
+  font-size: 20px;
+  width: 70%;
+  height: auto;
+  text-align: center;
+  border-bottom: 2px solid white;
+}
 
+#cont {
+  color: white;
+  text-align: center;
+  list-style-type: none;
+  width: auto;
+  height: 70%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+}
+
+#cont > li:nth-child(odd) {
+  font-size: 2em;
+  text-decoration: underline solid white;
+}
 main {
   grid-area: main;
   background-color: white;
+  padding: 0px 50px 30px 30px;
+}
+main > div {
+  line-height: 1.5;
+  width: 90%;
+  height: auto;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+}
+
+main > div > p,
+ul {
+  font-size: 14px;
+}
+
+.littlebig {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.mainul {
+  margin-bottom: 10px;
+}
+
+.mainul > li {
+  text-indent: 10px;
+  list-style-position: inside;
+  line-height: 1.2;
+  font-size: 14px;
 }
 
 img {
-  max-width: 15%;
+  max-width: 90%;
   height: auto;
 }
 
 h2 {
-  width: 15%;
+  width: 100%;
   height: auto;
+  text-align: center;
+}
+
+.headerleft {
+  width: 30%;
+  height: auto;
+  text-align: center;
+}
+
+.headercenter {
+  width: 70%;
+  height: auto;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+}
+
+hr {
+  width: 80%;
 }
 
 h1 {
   font-size: 4em;
   color: rgb(40, 10, 90);
-  width: 85%;
+  width: 80%;
+  padding-left: 30px;
   height: auto;
   border-bottom: 2px solid rgb(40, 10, 90);
 }
+
+h3 {
+  font-size: 30px;
+  letter-spacing: 3px;
+  color: #2c0a5b;
+  border-bottom: 1px solid black;
+  margin-bottom: 10px;
+}
 #headerp {
-  width: 85%;
+  width: 80%;
   height: auto;
+  padding-left: 30px;
 }
