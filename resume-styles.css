@@ -4,7 +4,7 @@
 }
 
 body {
-  background-color: burlywood;
+  background-color: rgb(236, 223, 213);
 }
 
 .big-grid {
@@ -59,6 +59,11 @@ main {
   background-color: white;
   padding: 0px 50px 30px 30px;
 }
+
+header, aside, main {
+  outline: 2px solid;
+}
+
 main > div {
   line-height: 1.5;
   width: 90%;
@@ -72,6 +77,7 @@ main > div > p,
 ul {
   font-size: 14px;
 }
+
 
 .littlebig {
   font-size: 18px;
@@ -114,12 +120,16 @@ h2 {
   justify-content: space-around;
 }
 
+.headercenter > p {
+  font-size: 40px;
+}
+
 hr {
   width: 80%;
 }
 
 h1 {
-  font-size: 4em;
+  font-size: 2em;
   color: rgb(40, 10, 90);
   width: 80%;
   padding-left: 30px;
